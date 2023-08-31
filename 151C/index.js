@@ -8,5 +8,4 @@ function showHtml() {
 }
 //controller
 
-
 showHtml();
