@@ -1,0 +1,4 @@
+Oppgave 151 D  
+Skriv en funksjon som teller antall a-er i en tekst.
+
+Utvid funksjonen så den teller både upper case og lower case.

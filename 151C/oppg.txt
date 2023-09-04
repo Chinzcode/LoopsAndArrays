@@ -1,0 +1,5 @@
+Oppgave 151 C  
+Lag en funksjon som tar en tekst som parameter og som returnerer teksten snudd i motsatt rekkefølge. 
+For eksempel skal 'Terje' bli til 'ejreT. 
+Du kan hente ut en bestemt bokstav i en tekst ved hjelp av funksjonen charAt(). 
+For eksempel vil 'Terje'.charAt(3) gi den fjerde bokstaven, 'j'.

@@ -1,11 +1,8 @@
-//model
-
-//view
-function showHtml() {
-    document.getElementById('app').innerHTML = /*HTML*/ `
-    
-    `;
+function textReversed(text) {
+    let result = '';
+    for (let i = 1; i <= text.length; i++) {
+        result += text.charAt(text.length-1 * i)
+    }
+    return result;
 }
-//controller
-
-showHtml();
+console.log(textReversed('trym'));

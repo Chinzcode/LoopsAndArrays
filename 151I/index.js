@@ -16,16 +16,16 @@ function writeTopHalf() {
         let spaceAfter = 12 - 4 * row;
         let hash = 1 + 1 * row;
 
-        for (let printSpace = 0; printSpace < spaceBefore; printSpace++) {
+        for (let i = 0; i < spaceBefore; i++) {
             writeSpace();
         }
-        for (let i = 0; i < hash; i++) {
+        for (let j = 0; j < hash; j++) {
             writeHash();
         }
-        for (let printSpace = 0; printSpace < spaceAfter; printSpace++) {
+        for (let k = 0; k < spaceAfter; k++) {
             writeSpace();
         }
-        for (let i = 0; i < hash; i++) {
+        for (let l = 0; l < hash; l++) {
             writeHash();
         }
         writeLineBreak();
@@ -34,24 +34,24 @@ function writeTopHalf() {
 
 function writeBottomHalf() {
     for (let row = 0; row < 4; row++) {
-        let spaceBefore = 3 - 1 * row;
-        let spaceAfter = 0 + 4 * row;
-        let hash = 4 - 1 * row;
+        let spaceBefore = 3 - (1 * row);
+        let spaceAfter = 0 + (4 * row);
+        let hash = 4 - (1 * row);
 
-        for (let printSpace = 0; printSpace < spaceBefore; printSpace++) {
+        for (let i = 0; i < spaceBefore; i++) {
             writeSpace();
         }
-        for (let i = 0; i < hash; i++) {
+        for (let j = 0; j < hash; j++) {
             writeHash();
         }
-        for (let printSpace = 0; printSpace < spaceAfter; printSpace++) {
+        for (let k = 0; k < spaceAfter; k++) {
             writeSpace();
         }
-        for (let i = 0; i < hash; i++) {
+        for (let l = 0; l < hash; l++) {
             writeHash();
         }
         writeLineBreak();
-    }
+    }   
 }
 
 writeTopHalf();
