@@ -24,6 +24,6 @@ function changeNumbersWithBlank(index) {
         || nullPos - 3 == index
         || (nullPos + 1 == index) && (index % 3 != 0)
         || (nullPos - 1 == index) && (index % 3 != 2))
-            [numbers[index],numbers[nullPos]] = [numbers[nullPos],numbers[index]];
+        [numbers[index],numbers[nullPos]] = [numbers[nullPos],numbers[index]];
     updateView();
 }
