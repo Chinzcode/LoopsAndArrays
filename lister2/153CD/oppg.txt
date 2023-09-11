@@ -2,3 +2,6 @@ Oppgave 153 C
 Skriv en funksjon som kan krypterer en tekst i store bokstaver ved hjelp av et enkelt subsitutsjonscipher. 
 For å krypfor eksempel en T må du slå opp posisjonen til T i alfabetet (se under) - og så finne bokstaven på samme posisjon i den hemmelige koden. 
 TERJE kryptert skal for eksempel bli MUKBU.
+
+Oppgave 153 D  
+Lag en funksjon som dekrypterer en kodet tekst.
