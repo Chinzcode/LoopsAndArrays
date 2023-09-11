@@ -5,3 +5,6 @@ TERJE kryptert skal for eksempel bli MUKBU.
 
 Oppgave 153 D  
 Lag en funksjon som dekrypterer en kodet tekst.
+
+Oppgave 153 E  
+Hvordan kan de to funksjonene refactoreres til en funksjon som tar tre parametre?

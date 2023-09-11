@@ -6,11 +6,9 @@
 3. Finne innholdet på samme index i secretCode
 4. printe ut innholdet henta fra secretCode
 */
-//Oppgave 153C
-let alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','O','P','Q','R','S','T','U','V','W','X','Y','Z','Æ','Ø','Å'];
-let secretCode = ['Å','Ø','Æ','Y','U','O','I','E','A','B','C','D','F','G','H','J','K','L','M','P','Q','R','S','T','V','W','X','Z'];
 
 encryptText('TERJE');
+
 function encryptText(text) {
     let secretText = '';
     for (let i = 0; i < text.length; i++) {
@@ -20,19 +18,4 @@ function encryptText(text) {
         secretText += secretChar;
     }
     console.log('TERJE =', secretText);
-}
-
-//Oppgave 153D
-//Lag en funksjon som dekrypterer en kodet tekst.
-
-decryptText('MUKBU');
-function decryptText(text) {
-    let decryptedText = '';
-    for (let i = 0; i < text.length; i++) {
-        let x = text.charAt(i); 
-        let y = secretCode.indexOf(x); 
-        let z = alphabet[y]; 
-        decryptedText += z;
-    }
-    console.log('MUKBU =', decryptedText);
 }
