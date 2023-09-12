@@ -1,0 +1,2 @@
+Oppgave 153 F  
+Lag en funksjon som lager en tilfeldig kode med alle bokstavene i alfabetet i tilfeldig rekkefølge.
