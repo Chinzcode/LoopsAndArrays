@@ -1,0 +1,26 @@
+Skriv en funksjon som tar en liste av tall som parameter og returnerer en frekvenstabell. 
+En frekvenstabell er en liste som representerer en opptelling av tall i en annen liste. 
+Hvis tallet 5 ligger på indeks 7 i frekvenstabellen, betyr dette at det var 5 forekomster av tallet 7. 
+Om du starter med listen [1, 2, 3, 4, 4, 1, 4 ] skal du få en frekvenstabell som dette
+
+[
+    0, // indeks 0 => 0 forekomster av tallet 0
+    2, // indeks 1 => 2 forekomster av tallet 1
+    1, // indeks 2 => 1 forekomst av tallet 2
+    1, // indeks 3 => 1 forekomst av tallet 3
+    3, // indeks 4 => 3 forekomster av tallet 4
+]
+
+Fremgangsmåte
+1. Lag en funskjon med et liste parameter
+2. Loop gjennom listen
+3. se hvilket tall vi har, og legge dette på riktig index. Alltid bare legge til 1. eller +=1
+
+
+Oppgave 153 H  
+Skriv en funksjon som tar en liste av tall som parameter og returnerer typetallet, dvs. 
+det tallet som forekommer flest ganger i listen.
+
+Oppgave 153 I  
+Skriv en funksjon for å kjenne igjen yatzy-poengsummen for ett par fra en liste av fem tall, dvs. 
+verdien på fem terninger. Hvis du har flere par, gjelder det med høyest poengsum.
