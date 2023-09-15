@@ -1,0 +1,19 @@
+Oppgave 153 J  
+Skriv en funksjon som sjekker om du har liten straight (1,2,3,4,5) 
+og en som sjekker om du har stor straight (2,3,4,5,6).
+
+Hva er forskjell på liten og stor straight?
+1. Start verdi
+2. Slutt verdi
+3. Sum av alle verdier
+
+Hvordan sjekke om du har en straight?
+1. 5 verdier på rad, hvor verdien øker med en for hver gang (det er parallelt med i økning)
+2. gå gjennom hele listen og sjekk verdi på hvert element
+3. sjekke om det er en økning på en (hvordan?)
+4. Lagre element verdi i en variabel. Bruke denne variabelen til å sjekk opp imot.
+5. hvis variabel + 1 = element verdi {
+    variabel++;
+} hvis ikke {
+    return 'ikke en straight'
+}
