@@ -1,3 +1,13 @@
 body {
     background-color: rgb(65, 70, 70);
 }
+
+span {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.errorMsg {
+    color: red;
+}
