@@ -4,6 +4,7 @@ let chosenBar;
 let inputValue;
 let isDisabled = 'disabled';
 let barText = 'ingen';
+let errorMsg = '';
 
 // view
 updateView();
@@ -23,6 +24,7 @@ function updateView() {
         <button onclick="addNewBar()">Legg til stolpe</button>
         <button ${isDisabled} onclick="editChosenBar(${chosenBar})">Endre valgt stolpe</button><br />
         <button ${isDisabled} onclick="removeChosenBar()">Fjerne valgt stolpe</button>
+        <div style="color: red;">${errorMsg}</div>
     `;
 }
 
@@ -65,6 +67,7 @@ function toggleActionForBar(barNo) {
         barText = barNo;
         isDisabled = '';
     }
+    errorMsg = '';
     updateView();
 }
 
@@ -73,14 +76,16 @@ function removeChosenBar() {
     chosenBar = null;
     barText = 'ingen';
     isDisabled = 'disabled';
+    errorMsg = '';
     updateView();
 }
 
 function editChosenBar() {
     if (inputValue > 0 && inputValue < 11) {
         numbers.splice((chosenBar - 1), 1, inputValue)
+        errorMsg = '';
     } else {
-        alert("Ikke gyldig verdi oppgitt!")
+        errorMsg = 'Ikke gyldig verdi oppgitt!';
     }
     inputValue = null;
     updateView();
@@ -89,8 +94,9 @@ function editChosenBar() {
 function addNewBar() {
     if (inputValue > 0 && inputValue < 11) {
         numbers.push(inputValue);
+        errorMsg = '';
     } else {
-        alert("Ikke gyldig verdi oppgitt!")
+        errorMsg = 'Ikke gyldig verdi oppgitt!';
     }
     inputValue = null;
     updateView();
